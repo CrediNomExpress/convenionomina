@@ -222,23 +222,17 @@ style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);"
 
 <!-- PROCESO -->
 <section class="section">
-<div class="container">
-
 <h2>¿Cómo funciona?</h2>
 
 <p>
 1. Envías tus datos básicos<br>
 2. Un asesor te contacta<br>
-3. Recibes una respuesta rápida
+3. Recibes una respuesta rápida<br>
 </p>
-
-</div>
 </section>
 
 <!-- SEGMENTOS -->
 <section class="section">
-<div class="container">
-
 <h2>¿Quiénes pueden solicitar?</h2>
 
 <div class="cards">
@@ -248,29 +242,53 @@ style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);"
 <div class="card">🏛 Gobierno</div>
 <div class="card">👴 Pensionados</div>
 </div>
-
-</div>
 </section>
 
 <!-- TESTIMONIOS -->
 <section class="section">
-<div class="container">
-
 <h2>Experiencias reales</h2>
 
 <div class="cards">
-<div class="testimonial">⭐⭐⭐⭐⭐<br>"Proceso claro"<br><b>- Cliente</b></div>
-<div class="testimonial">⭐⭐⭐⭐⭐<br>"Muy rápido"<br><b>- Cliente</b></div>
-<div class="testimonial">⭐⭐⭐⭐⭐<br>"Recomendado"<br><b>- Cliente</b></div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br>
+"Soy maestro SEP y el proceso fue rápido y claro"<br>
+<b>- Luis Hernández, CDMX</b>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br>
+"Me explicaron todo y no tuve problemas"<br>
+<b>- María González, IMSS</b>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br>
+"Buena atención y respuesta rápida"<br>
+<b>- José Ramírez, Pensionado</b>
 </div>
 
 </div>
 </section>
 
+<!-- FAQ -->
+<section class="section">
+<h2>Preguntas frecuentes</h2>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+¿Cómo es el proceso?
+<div class="faq-answer">Un asesor te guía en todo momento.</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+¿Cuánto tarda?
+<div class="faq-answer">Generalmente en menos de 24 horas.</div>
+</div>
+
+</section>
+
 <!-- FORM -->
 <section class="section" id="formulario">
-<div class="container">
-
 <h2>Solicita información</h2>
 
 <div class="form">
@@ -287,9 +305,9 @@ style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);"
 
 <button class="btn" onclick="enviar()">Enviar</button>
 
-<p style="font-size:12px;">Aviso de privacidad</p>
-
-</div>
+<p style="font-size:12px;">
+Al enviar aceptas nuestro aviso de privacidad
+</p>
 
 </div>
 </section>
@@ -298,6 +316,11 @@ style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);"
 <footer>
 <p><b>CREDINOMEXPRES</b></p>
 <p>Ciudad de México</p>
+<p>Atención vía WhatsApp</p>
+
+<p>
+Aviso de privacidad: Tus datos serán utilizados únicamente para evaluación crediticia.
+</p>
 </footer>
 
 <!-- WHATS -->
@@ -319,6 +342,3 @@ let d=document.getElementById("dep").value;
 window.open(`https://wa.me/525654011167?text=Hola quiero información:%0A${n}%0A${t}%0A${d}`);
 }
 </script>
-
-</body>
-</html>
