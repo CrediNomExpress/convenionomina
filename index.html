@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <!-- Google tag (GA4) -->
+
+<!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FH7D3DF00B"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'G-FH7D3DF00B');
 </script> 
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,9 +32,17 @@ body{
   font-weight:bold;
 }
 
+/* CONTENEDOR PRO */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 20px;
+}
+
 /* HERO */
 .hero{
-  height:85vh;
+  min-height:85vh;
+  padding:80px 20px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -41,6 +50,7 @@ body{
   color:white;
   background:url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&w=1200') center/cover;
   position:relative;
+  margin-bottom:40px;
 }
 .hero::before{
   content:"";
@@ -53,7 +63,6 @@ body{
   position:relative;
   z-index:2;
   max-width:700px;
-  margin-top:40px; /* 🔥 NUEVO */
 }
 
 .hero h1{font-size:42px;}
@@ -73,6 +82,7 @@ body{
 /* SECTIONS */
 .section{
   padding:80px 20px;
+  text-align:center;
 }
 
 /* CARDS */
@@ -133,6 +143,7 @@ footer{
   color:white;
   padding:20px;
   font-size:13px;
+  text-align:center;
 }
 
 /* WHATS */
@@ -173,200 +184,141 @@ footer{
 
 </div>
 </section>
-<!-- 🔵 QUIÉNES SOMOS PREMIUM -->
+
+<!-- QUIENES SOMOS -->
 <section class="section" style="background:linear-gradient(180deg,#ffffff,#f0f4ff);">
+<div class="container">
 
-  <h2 style="font-size:34px; margin-bottom:40px;">
-    ¿Quiénes somos?
-  </h2>
+<h2 style="font-size:34px; margin-bottom:40px;">¿Quiénes somos?</h2>
 
-  <div style="
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    gap:50px;
-    max-width:1100px;
-    margin:auto;
-  ">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:50px;">
 
-    <!-- IMAGEN -->
-    <div style="flex:1; min-width:300px;">
-      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&w=800"
-           style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);">
-    </div>
-
-    <!-- TEXTO -->
-    <div style="flex:1; min-width:300px; text-align:left;">
-
-      <h3 style="font-size:30px; color:#0d47a1; margin-bottom:15px;">
-        15 Años de Experiencia en el Sector
-      </h3>
-
-      <p style="font-size:16px; line-height:1.7;">
-        En <b>CREDINOMEXPRES</b> contamos con más de <b>15 años de experiencia</b>
-        brindando soluciones financieras confiables para trabajadores del sector público en México.
-      </p>
-
-      <p style="font-size:16px; line-height:1.7;">
-        Nos especializamos en <b>créditos vía nómina con convenio</b>, ofreciendo un proceso claro,
-        seguro y acompañado en todo momento.
-      </p>
-
-      <p style="font-size:16px; line-height:1.7;">
-        🤝 Hemos apoyado a <b>cientos de clientes</b> del IMSS, SEP, ISSSTE y Gobierno,
-        generando confianza y resultados reales.
-      </p>
-
-      <!-- MINI BADGES FIX PRO -->
-<div style="
-  margin-top:20px;
-  display:flex;
-  flex-wrap:wrap; /* 🔥 CLAVE */
-  gap:10px;       /* 🔥 CLAVE */
-">
-
-  <span style="
-    background:#0d47a1;
-    color:white;
-    padding:8px 14px;
-    border-radius:20px;
-    display:inline-block;
-  ">
-    ✔ Experiencia
-  </span>
-
-  <span style="
-    background:#25D366;
-    color:white;
-    padding:8px 14px;
-    border-radius:20px;
-    display:inline-block;
-  ">
-    ✔ Confianza
-  </span>
-
-  <span style="
-    background:#ff9800;
-    color:white;
-    padding:8px 14px;
-    border-radius:20px;
-    display:inline-block;
-  ">
-    ✔ Atención personalizada
-  </span>
-
+<div style="flex:1; min-width:300px;">
+<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&w=800"
+style="width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15);">
 </div>
 
-  </div>
+<div style="flex:1; min-width:300px; text-align:left;">
+
+<h3 style="font-size:30px; color:#0d47a1;">15 Años de Experiencia en el Sector</h3>
+
+<p>En <b>CREDINOMEXPRES</b> contamos con más de <b>15 años de experiencia</b> brindando soluciones financieras confiables.</p>
+
+<p>Nos especializamos en <b>créditos vía nómina con convenio</b>, ofreciendo un proceso claro y seguro.</p>
+
+<p>🤝 Hemos apoyado a <b>cientos de clientes</b> del sector público.</p>
+
+<div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;">
+<span style="background:#0d47a1;color:white;padding:8px 14px;border-radius:20px;">✔ Experiencia</span>
+<span style="background:#25D366;color:white;padding:8px 14px;border-radius:20px;">✔ Confianza</span>
+<span style="background:#ff9800;color:white;padding:8px 14px;border-radius:20px;">✔ Atención personalizada</span>
+</div>
+
+</div>
+</div>
+
+</div>
 </section>
 
 <!-- PROCESO -->
 <section class="section">
-  <div class="container">
+<div class="container">
 
-    <h2>¿Cómo funciona?</h2>
+<h2>¿Cómo funciona?</h2>
 
-    <div class="card" style="max-width:500px;margin:auto;">
-      1. Envías tus datos básicos<br><br>
-      2. Un asesor te contacta<br><br>
-      3. Recibes una respuesta rápida
-    </div>
+<p>
+1. Envías tus datos básicos<br>
+2. Un asesor te contacta<br>
+3. Recibes una respuesta rápida
+</p>
 
-  </div>
+</div>
 </section>
 
 <!-- SEGMENTOS -->
 <section class="section">
-  <div class="container">
+<div class="container">
 
-    <h2>¿Quiénes pueden solicitar?</h2>
+<h2>¿Quiénes pueden solicitar?</h2>
 
-    <div class="cards">
-      <div class="card">👩‍🏫 SEP</div>
-      <div class="card">🏥 IMSS / ISSSTE</div>
-      <div class="card">👮 Policías</div>
-      <div class="card">🏛 Gobierno</div>
-      <div class="card">👴 Pensionados</div>
-    </div>
+<div class="cards">
+<div class="card">👩‍🏫 SEP</div>
+<div class="card">🏥 IMSS / ISSSTE</div>
+<div class="card">👮 Policías</div>
+<div class="card">🏛 Gobierno</div>
+<div class="card">👴 Pensionados</div>
+</div>
 
-  </div>
+</div>
 </section>
 
 <!-- TESTIMONIOS -->
 <section class="section">
-  <div class="container">
+<div class="container">
 
-    <h2>Experiencias reales</h2>
+<h2>Experiencias reales</h2>
 
-    <div class="cards">
+<div class="cards">
+<div class="testimonial">⭐⭐⭐⭐⭐<br>"Proceso claro"<br><b>- Cliente</b></div>
+<div class="testimonial">⭐⭐⭐⭐⭐<br>"Muy rápido"<br><b>- Cliente</b></div>
+<div class="testimonial">⭐⭐⭐⭐⭐<br>"Recomendado"<br><b>- Cliente</b></div>
+</div>
 
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐<br>
-        "Soy maestro SEP y el proceso fue rápido y claro"<br>
-        <b>- Luis Hernández, CDMX</b>
-      </div>
-
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐<br>
-        "Me explicaron todo y no tuve problemas"<br>
-        <b>- María González, IMSS</b>
-      </div>
-
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐<br>
-        "Buena atención y respuesta rápida"<br>
-        <b>- José Ramírez, Pensionado</b>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section">
-  <div class="container">
-
-    <h2>Preguntas frecuentes</h2>
-
-    <div class="faq-item" onclick="toggleFAQ(this)">
-      ¿Cómo es el proceso?
-      <div class="faq-answer">Un asesor te guía en todo momento.</div>
-    </div>
-
-    <div class="faq-item" onclick="toggleFAQ(this)">
-      ¿Cuánto tarda?
-      <div class="faq-answer">Generalmente en menos de 24 horas.</div>
-    </div>
-
-  </div>
+</div>
 </section>
 
 <!-- FORM -->
 <section class="section" id="formulario">
-  <div class="container">
+<div class="container">
 
-    <h2>Solicita información</h2>
+<h2>Solicita información</h2>
 
-    <div class="form">
-      <input id="nombre" placeholder="Nombre">
-      <input id="telefono" placeholder="Teléfono">
+<div class="form">
+<input id="nombre" placeholder="Nombre">
+<input id="telefono" placeholder="Teléfono">
 
-      <select id="dep">
-        <option>Selecciona dependencia</option>
-        <option>SEP</option>
-        <option>IMSS</option>
-        <option>Policía</option>
-        <option>Pensionado</option>
-      </select>
+<select id="dep">
+<option>Selecciona dependencia</option>
+<option>SEP</option>
+<option>IMSS</option>
+<option>Policía</option>
+<option>Pensionado</option>
+</select>
 
-      <button class="btn" onclick="enviar()">Enviar</button>
+<button class="btn" onclick="enviar()">Enviar</button>
 
-      <p style="font-size:12px;">
-        Al enviar aceptas nuestro aviso de privacidad
-      </p>
-    </div>
+<p style="font-size:12px;">Aviso de privacidad</p>
 
-  </div>
+</div>
+
+</div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+<p><b>CREDINOMEXPRES</b></p>
+<p>Ciudad de México</p>
+</footer>
+
+<!-- WHATS -->
+<a href="https://wa.me/525654011167" target="_blank" id="whatsapp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30">
+</a>
+
+<script>
+function toggleFAQ(el){
+let ans=el.querySelector(".faq-answer");
+ans.style.display=ans.style.display==="block"?"none":"block";
+}
+
+function enviar(){
+let n=document.getElementById("nombre").value;
+let t=document.getElementById("telefono").value;
+let d=document.getElementById("dep").value;
+
+window.open(`https://wa.me/525654011167?text=Hola quiero información:%0A${n}%0A${t}%0A${d}`);
+}
+</script>
+
+</body>
+</html>
