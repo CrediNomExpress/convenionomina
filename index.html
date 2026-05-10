@@ -27,6 +27,13 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1771130073850410&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wp3h6t6vh0");
+</script>
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -852,22 +859,22 @@ footer a:hover {
     <h2>Simula tu crédito GRATIS</h2>
     <p class="section-sub">Te respondemos en menos de 15 minutos por WhatsApp</p>
 
-    <div class="form">
+    <div class="form" data-clarity-mask="true">
       <div class="form-group">
         <label>📝 Nombre completo</label>
-        <input type="text" id="nombre" placeholder="Ej. Ana María López García">
+        <input type="text" id="nombre" data-clarity-mask="true" placeholder="Ej. Ana María López García">
         <div class="error-message" id="error-nombre">Por favor ingresa tu nombre completo</div>
       </div>
 
       <div class="form-group">
         <label>📱 Teléfono (WhatsApp)</label>
-        <input type="tel" id="telefono" placeholder="10 dígitos" maxlength="10" oninput="validatePhone(this)">
+        <input type="tel" id="telefono" data-clarity-mask="true" placeholder="10 dígitos" maxlength="10" oninput="validatePhone(this)">
         <div class="error-message" id="error-telefono">Ingresa un número válido de 10 dígitos</div>
       </div>
 
       <div class="form-group">
         <label>🏢 Dependencia</label>
-        <select id="dep">
+        <select id="dep" data-clarity-mask="true">
           <option value="">Selecciona tu institución</option>
           <option>SEP</option>
           <option>IMSS</option>
@@ -903,9 +910,9 @@ footer a:hover {
     únicamente para el trámite de su solicitud, conforme a la Ley Federal de Protección de Datos Personales (LFPDPPP). 
     Para ejercer sus derechos ARCO, puede escribir a: <a href="mailto:info@credinomexpress.com.mx">info@credinomexpress.com.mx</a>
   </p>
- <p style="font-size:12px; text-align:center; margin-top:15px;">
-    Este sitio utiliza herramientas como Meta Pixel para fines de análisis y publicidad.
-  </p>
+ <p style="font-size:12px; text-align:center; margin-top:15px; line-height:1.6; max-width:800px; margin-left:auto; margin-right:auto;">
+Este sitio utiliza herramientas de análisis y medición como Google Analytics, Meta Pixel y Microsoft Clarity para comprender el comportamiento de navegación, mejorar la experiencia del usuario y optimizar nuestros servicios. La información recopilada es utilizada únicamente con fines estadísticos, de análisis y seguimiento comercial, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP). Los datos sensibles o financieros proporcionados por los usuarios no son compartidos públicamente ni utilizados fuera del proceso de atención y evaluación correspondiente.
+</p>
 
   <p style="margin-top: 20px; font-size: 11px;">© 2025 CREDINOMEXPRESS. Todos los derechos reservados.</p>
 </footer>
